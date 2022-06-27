@@ -1,5 +1,7 @@
 export const Video = () => {
     return (
-        <h1>Video</h1>
+        <div className="flex-1">
+            Video
+        </div>
     )
 }
