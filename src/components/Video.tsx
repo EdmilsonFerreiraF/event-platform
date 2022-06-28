@@ -4,6 +4,7 @@ import {
     CaretRight,
     DiscordLogo,
     FileArrowDown,
+    Image,
     Lightning
 } from "phosphor-react"
 
@@ -68,7 +69,7 @@ export const Video = (props: VideoProps) => {
                 </div>
             </div>
             <div className="p-8 max-w-[1100px] mx-auto">
-                <div className="flex items-start gap-16">
+                <div className="flex items-center lg:items-start flex-col sm:flex-row gap-8 sm:gap-16">
                     <div className="flex-1">
                         <h1 className="text-2xl font-bold">
                             {data.lesson.title}
@@ -96,27 +97,27 @@ export const Video = (props: VideoProps) => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col gap-4">
-                        <a href="" className="p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors">
+                    <div className="flex flex-col w-full sm:w-auto gap-4">
+                        <a href="#" className="p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors">
                             <DiscordLogo size={24} />
                             Comunidade do Discord
                         </a>
 
-                        <a href="" className="p-4 text-sm border border-blue-500 text-blue-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-blue-500 hover:text-gray-900 transition-colors">
+                        <a href="#" className="p-4 text-sm border border-blue-500 text-blue-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-blue-500 hover:text-gray-900 transition-colors">
                             <Lightning size={24} />
                             Acesse o desafio
                         </a>
                     </div>
                 </div>
 
-                <div className="gap-8 mt-20 grid grid-cols-2">
-                    <a href="" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
+                <div className="gap-8 mt-20 grid md:grid-cols-2">
+                    <a href="#" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
                         <div className="bg-green-700 h-full p-6 flex items-center">
                             <FileArrowDown size={40} />
                         </div>
 
-                        <div className="py-6 leading-relaxed">
-                            <strong className="text-2xl">
+                        <div className="py-6 flex-1 leading-relaxed">
+                            <strong className="text-2xl break-all">
                                 Material complementar
                             </strong>
 
@@ -126,16 +127,16 @@ export const Video = (props: VideoProps) => {
                         </div>
 
                         <div className="h-full p-4 flex items-center">
-                            <CaretRight size={24} />
+                            <CaretRight size={24} color="#81D8F7" />
                         </div>
                     </a>
 
-                    <a href="" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
+                    <a href="#" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
                         <div className="bg-green-700 h-full p-6 flex items-center">
-                            <FileArrowDown size={40} />
+                            <Image size={40} />
                         </div>
 
-                        <div className="py-6 leading-relaxed">
+                        <div className="py-6 flex-1 leading-relaxed">
                             <strong className="text-2xl">
                                 Wallpapers exclusivos
                             </strong>
@@ -146,7 +147,7 @@ export const Video = (props: VideoProps) => {
                         </div>
 
                         <div className="h-full p-4 flex items-center">
-                            <CaretRight size={24} />
+                            <CaretRight size={24} color="#81D8F7" />
                         </div>
                     </a>
                 </div>
