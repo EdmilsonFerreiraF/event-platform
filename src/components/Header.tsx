@@ -1,6 +1,5 @@
 import { List, X } from "phosphor-react"
-import { MouseEventHandler, useState } from "react"
-import { useLocation, useOutlet, useParams, useResolvedPath } from "react-router-dom"
+import { MouseEventHandler } from "react"
 
 import Logo from "./Logo"
 

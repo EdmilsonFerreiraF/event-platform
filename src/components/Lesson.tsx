@@ -1,7 +1,7 @@
 import { ArrowFatLeft, CheckCircle, Lock } from 'phosphor-react'
+import { Link, useParams } from 'react-router-dom';
 import { format, isPast } from 'date-fns'
 import ptBR from 'date-fns/esm/locale/pt-BR/index.js';
-import { Link, useParams } from 'react-router-dom';
 
 interface LessonProps {
     title: string;

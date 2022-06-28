@@ -1,0 +1,13 @@
+query GetLessons {
+    lessons(orderBy: availableAt_ASC, stage: PUBLISHED) {
+        ...LessonSummary
+    }
+}
+
+fragment LessonSummary on Lesson {
+    id
+    lessonType
+    availableAt
+    title
+    slug
+}
