@@ -11,7 +11,7 @@ interface HeaderProps {
 
 export const Header = (props: HeaderProps) => {
     return (
-        <header className="w-full px-5 sm:px-9 py-5 z-[51] fixed flex sm:relative items-center justify-between xl:justify-center bg-gray-700 border-b border-gray-600">
+        <header className="w-full px-5 sm:px-9 py-5 z-[51] fixed flex xl:relative items-center justify-between xl:justify-center bg-gray-700 border-b border-gray-600">
             <div className="w-44 sm:w-auto">
                 <Logo />
             </div>
